@@ -1,0 +1,1 @@
+window.alert("welcom to the world of js");
