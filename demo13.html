@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+Username <br/><input type="text" id="t1"/>
+<span id="msg1"></span><br>
+Password <br/><input type="password" id="t2"/>
+<span id="msg2"></span><br>
+<button onclick="demo()">get value</button>
+<script>
+function demo(){
+var txt1=document.getElementById("t1");
+var txt2=document.getElementById("t2");
+var m1=document.getElementById("msg1")
+var m2=document.getElementById("msg2")
+m1.innerText=txt1.value
+m2.innerText=txt2.value
+m1.style.color="red"
+m2.style.color="green"
+}
+</script>
+</body>
+</html> 
