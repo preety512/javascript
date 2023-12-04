@@ -1,0 +1,59 @@
+<html>
+<head>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-5 pt-4">
+<h1 class="pb-5"><span class="border-bottom border-2 border-danger">Add</span> Your Feedback</h1>
+<table>
+<tr>
+<td>Your Name :</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;Your Image :</td>
+</tr>
+<tr>
+<td><input type="text"required placeholder="Enter your name *"id="t1"class="form-control"/>
+<span id="msg1"></span>
+</td>
+<td><input required type="file"name="file"multiple accept=".jpg,png"id="t2"class="form-control ms-3">
+<span id="msg2"></span>
+</td>
+</tr>
+</table><br>
+You're From:<br><input type="Email"placeholder="Enter your College/institute Name *"id="t3"class="form-control"/>
+<span id="msg3"></span>
+<br><br>
+Your Feedback :<br><textarea placeholder="Your valueable feedback" id="t4"class="form-control"></textarea>
+<span id="msg4"></span>
+<br><br>
+<button class="btn btn-outline-danger" onclick="demo()">SEND FEEDBACK</button>
+</div>
+<div class="col-sm-5 pt-5"><img src="images/img25.WEBP"class="img-fluid"></div>
+<div class="col-sm-1"></div>
+</div>
+</div>
+<script>
+function demo(){
+var txt1=document.getElementById("t1");
+var txt2=document.getElementById("t2");
+var txt3=document.getElementById("t3");
+var txt4=document.getElementById("t4");
+var m1=document.getElementById("msg1");
+var m2=document.getElementById("msg2");
+var m3=document.getElementById("msg3");
+var m4=document.getElementById("msg4");
+m1.innerText=txt1.value
+m2.innerText=txt2.value
+m3.innerText=txt3.value
+m4.innerText=txt4.value
+m1.style.color="red"
+m2.style.color="green"
+m3.style.color="red"
+m4.style.color="green"
+}
+</script>
+</body>
+</html> 
