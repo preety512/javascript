@@ -1,0 +1,145 @@
+<html>
+<head>
+<link href="CSS/bootstrap.css"rel="stylesheet"/>
+<link href="CSS/all.css"rel="stylesheet"/>
+<style>
+body{
+background:#e9ecef;
+}
+.bttn
+{
+background:#fbaf0c;
+color:white;
+border:none;
+width:30%;
+height:45px;
+font-size:15px;
+text-align:center;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<h1 class="fs-2 text-center fw-bold">Reg<span class="border-bottom border-2 border-warning">ister</span><span class="border-bottom border-2 border-warning text-warning ps-2">With US</span></h1>
+<p class="text-center ">Your are just one step behind to join the Techpile . I Promise you to give my best you will ll be a part of techpile</p>
+</div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-4">
+Enroll No:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="TPT_ST20"id="t1"class="form-control bg-secondary"/>
+<span id="msg1"></span>
+</div>
+Name:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="Username"id="t2"class="form-control bg-secondary"/>
+<span id="msg2"></span>
+</div>
+College Name:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="hpl"id="t3"class="form-control bg-secondary"/>
+<span id="msg3"></span>
+</div>
+Year:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="Your Pursuing year"id="t4"class="form-control bg-secondary"/>
+<span id="msg4"></span>
+</div>
+Email Id:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="Email Id"id="t5"class="form-control bg-secondary"/>
+<span id="msg5"></span>
+</div>
+<button class="bttn"onclick="demo()">REGISTER NOW</button>
+</div>
+<div class="col-sm-4">
+Today Is:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="4_12-2023"id="t6"class="form-control bg-secondary"/>
+<span id="msg6"></span>
+</div>
+Apply for:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="select Traning Name"id="t7"class="form-control bg-secondary"/>
+<span id="msg7"></span>
+</div>
+Course:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="select your Course"id="t8"class="form-control bg-secondary"/>
+<span id="msg8"></span>
+</div>
+Contact No:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder="Mobile no"id="t9"class="form-control bg-secondary"/>
+<span id="msg9"></span>
+</div>
+Amount to pay:<br/>
+<div class="input-group ">
+<span class="input-group-text text-bg-secondary"><i class="fa-regular fa-user"></i></span>
+<input type="text"placeholder=""id="t10"class="form-control bg-secondary"/>
+<span id="msg10"></span>
+</div>
+</div>
+<div class="col-sm-2"></div>
+</div>
+</div>
+</div>
+<script>
+function demo(){
+var txt1=document.getElementById("t1");
+var txt2=document.getElementById("t2");
+var txt3=document.getElementById("t3");
+var txt4=document.getElementById("t4");
+var txt5=document.getElementById("t5");
+var txt6=document.getElementById("t6");
+var txt7=document.getElementById("t7");
+var txt8=document.getElementById("t8");
+var txt9=document.getElementById("t9");
+var txt10=document.getElementById("t10");
+var m1=document.getElementById("msg1");
+var m2=document.getElementById("msg2");
+var m3=document.getElementById("msg3");
+var m4=document.getElementById("msg4");
+var m5=document.getElementById("msg5");
+var m6=document.getElementById("msg6");
+var m7=document.getElementById("msg7");
+var m8=document.getElementById("msg8");
+var m9=document.getElementById("msg9");
+var m10=document.getElementById("msg10");
+m1.innerText=txt1.value
+m2.innerText=txt2.value
+m3.innerText=txt3.value
+m4.innerText=txt4.value
+m5.innerText=txt5.value
+m6.innerText=txt6.value
+m7.innerText=txt7.value
+m8.innerText=txt8.value
+m9.innerText=txt9.value
+m10.innerText=txt10.value
+m1.style.color="red"
+m2.style.color="green"
+m3.style.color="red"
+m4.style.color="green"
+m5.style.color="red"
+m6.style.color="red"
+m7.style.color="red"
+m8.style.color="red"
+m9.style.color="red"
+m10.style.color="red"
+}
+</script>
+</body>
+</html>	
