@@ -1,0 +1,31 @@
+<html>
+<head>
+<body>
+<h1 id="a">Preety</h1>
+<h1 id="b">Hrshita</h1>
+<h1 id="c">Anshu</h1>
+<h1 id="d">Sakshi</h1>
+<br><br>
+<button onclick="demo1()">CLICK ME</button>
+<script>
+function demo(){
+var b1=document.querySelector("#a")
+var b2=document.querySelector("#b")
+var b3=document.querySelector("#c")
+var b4=document.querySelector("#d")
+var path1=b1.innerText
+var path2=b2.innerText
+var path3=b3.innerText
+var path4=b4.innerText
+b1.innerText=path2
+b2.innerText=path1
+b3.innerText=path4
+b4.innerText=path3
+}
+function demo1()
+{
+window.setInterval("demo()",1000)
+}
+</script>
+</body>
+</html> 
