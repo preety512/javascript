@@ -1,0 +1,57 @@
+<head>
+<head>
+<body>
+<select id="ddl"> 
+<option value="">-------select course----</option>
+<option value="st">Summer Traning</option>
+<option value="sv">Winter Traning</option>
+<option value="sb">IT Traning</option>
+<option value="sn">Apprenticeship Traning</option>
+</select><br><br>
+<input type="text"id="txt1"><br><br>
+<input onclick="demo()" type="button"id="btn1"value="Save Me">
+<script>
+function demo(){
+var ddl=document.querySelector("#ddl")
+var t=document.querySelector("#txt1")
+var btn=document.querySelector("#btn1")
+if(ddl.value=="st")
+{
+t.value=5500;
+t.style.color="green"
+ddl.style.border="2px solid green"
+t.style.border="2px solid green"
+btn.style.background="green"
+btn.style.color="white"
+}
+else if(ddl.value=="sv")
+{
+t.value=5600;
+t.style.color="red"
+ddl.style.border="2px solid red"
+t.style.border="2px solid red"
+btn.style.background="red"
+btn.style.color="white"
+}
+else if(ddl.value=="sb")
+{
+t.value=5000;
+t.style.color="blue"
+ddl.style.border="2px solid blue"
+t.style.border="2px solid blue"
+btn.style.background="blue"
+btn.style.color="white"
+}
+else 
+{
+t.value=7000;
+t.style.color="navy"
+ddl.style.border="2px solid navy"
+t.style.border="2px solid navy"
+btn.style.background="navy"
+btn.style.color="white"
+}
+}
+</script>
+</body>
+</html> 

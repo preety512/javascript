@@ -1,0 +1,45 @@
+<html>
+<head>
+<head>
+<body>
+<select id="b1"> 
+<option>-------select course----</option>
+<option>Summer Traning</option>
+<option>Winter Traning</option>
+<option>IT Traning</option>
+<option>Apprenticeship Traning</option>
+</select><br><br>
+<input type="text"id="b2"><br><br>
+<input onclick="demo()" type="button"id="btn1"value="Save Me">
+<script>
+function demo(){
+var x=document.querySelector("#b1")
+var y=document.querySelector("#b2")
+if(x.value=="Summer Traning")
+{
+y.value=5500;
+y.style.color="green"
+y.style.border="2px solid green"
+}
+else if(x.value=="Winter Traning")
+{
+y.value=5000;
+y.style.color="blue"
+y.style.border="2px solid blue"
+}
+else if(x.value=="IT Traning")
+{
+y.value=6000;
+y.style.color="red"
+y.style.border="2px solid red"
+}
+else 
+{
+y.value=20000;
+y.style.color="navy"
+y.style.border="2px solid navy"
+}
+}
+</script>
+</body>
+</html> 

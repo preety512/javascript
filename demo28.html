@@ -1,0 +1,38 @@
+<html>
+<head>
+<head>
+<body>
+<span></span>
+<input type="password"id="txt1" />
+<input onclick="demo()" type="button"id="btn1"value="SHOW">
+<script>
+function demo(){
+var t=document.querySelector("#txt1")
+var sp=document.querySelector("span")
+var btn=document.querySelector("#btn1")
+if(t.value!=""){
+if(btn.value=="SHOW"){
+btn.value="HIDE"
+t.type="text"
+t.style.border="2px solid red"
+t.style.color="red"
+btn.style.background="red"
+btn.style.color="white"
+}
+else{
+btn.value="SHOW"
+t.type="password"
+t.style.border="2px solid green"
+t.style.color="green"
+btn.style.background="green"
+btn.style.color="white"
+}
+}
+else{
+sp.innerText="Enter your password....."
+sp.style.color="red"
+}
+}
+</script>
+</body>
+</html> 
