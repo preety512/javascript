@@ -1,0 +1,20 @@
+<html>
+<head>
+<body>
+<div></div>
+<button onclick="demo()">CLICK ME</button>
+<script>
+function demo(){
+var dv=document.querySelector("div")
+var arr=new Array("HTML","CSS","JS","JQUERY")
+var res="";
+for( var i=0;i<arr.length;i++)
+{ 
+//res=res+arr[i]
+res+=arr[i]+"<br/>"
+}
+dv.innerHTML=res
+}
+</script>
+</body>
+</html>

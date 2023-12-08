@@ -1,0 +1,20 @@
+<html>
+<head>
+<body>
+<button onclick="demo()">CLICK ME</button>
+<p></p>
+<script>
+function demo(){
+var para=document.querySelector("p")
+var arr=["SUMMER TRANING","WINTER TRANING","APPRETICSHIP","IT TRANING"]
+var r="<ul>";
+for(var i=0;i<4;i++)
+{ 
+r=r+"<li>"+arr[i]+"</li>";
+}
+r+="</ul>"
+para.innerHTML=r
+}
+</script>
+</body>
+</html>
