@@ -1,0 +1,19 @@
+<head>
+<head>
+<body>
+<select onchange="demo()"> 
+<option>select Languag</option>
+<option>.Net</option>
+<option>Javascrpit</option>
+<option>Python</option>
+<option>PHP</option>
+</select>
+<span></span>
+<script>
+function demo(){
+ var ddl=document.querySelector("select")
+ document.querySelector("span").innerHTML=ddl.value
+}
+</script>
+</body>
+</html> 

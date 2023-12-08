@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+img{
+height:400px;
+width:900px;
+padding:40px;
+border:10px groove orange;
+box-shadow:0px 0px 20px black inset;
+border-radius:10px;
+}
+</style>
+</head>
+<body onload="demo()">
+<center>
+<img src="images/img21.jpg"/>
+</center>
+<script>
+var arr=["img12.jpg","caffe.jpg","img12.jpg","img21.jpg","caffe.jpg"]
+var i=0
+function demo(){
+var im=document.querySelector("img")
+im.src="images/"+arr[i]
+i++;
+if(i==5)
+i=0
+}
+window.setInterval(demo,3000)
+</script>
+</body>
+</html>
