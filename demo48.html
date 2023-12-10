@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link href="CSS/bootstrap.css"rel="stylesheet"/>
+    <style>
+   .Small
+   {
+   min-height:150px; 
+   }
+
+    </style>
+    </head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+             <img src="images/img21.jpg"id="imgB" class="img-thumbnail w-100"/>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/img12.jpg"onmouseover="demo(this)"onmouseleave="demo1()" class="img-thumbnail Small">
+            <img src="images/img21.jpg"onmouseover="demo(this)"onmouseleave="demo1()" class="img-thumbnail Small">
+            <img src="images/img12.jpg"onmouseover="demo(this)"onmouseleave="demo1()" class="img-thumbnail Small">
+        </div>
+      </div>
+    </div>
+<script>
+    function demo(x){
+
+      document.querySelector("#imgB").src =x.src 
+    }
+    function demo1(){
+        document.querySelector("#imgB").src =x.src 
+
+    }
+</script>
+</body>
+</html>

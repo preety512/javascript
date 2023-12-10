@@ -1,0 +1,68 @@
+<html>
+<head>
+<link href="CSS/bootstrap.css"rel="stylesheet"/>
+<link href="CSS/all.css"rel="stylesheet"/>
+<style>
+body{
+
+   background:url("images/caffe.jpg"); 
+   
+}
+
+</style>
+<head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6 mx-auto p-4 bg-secondary mt-5 border border-danger border-1">
+<a href="#"onclick="demo2()"class="btn btn-dark border border-danger border-1">Register <i class="fa-solid fa-address-card"></i></a>
+<a href="#"onclick="demo1()"class="btn btn-dark float-end border-danger border-1">Login <i class="fa-solid fa-address-card"></i></a>
+<div id="regform">
+<form>
+Name<input type="text"placeholder="enter your name"class="form-control border border-danger border-1">
+Email<input type="Email"placeholder="enter your Email"class="form-control border border-danger border-1">
+Password<input type="password"placeholder="enter your password"class="form-control border border-danger border-1">
+Mobile<input type="number"placeholder="enter your number"class="form-control border border-danger border-1">
+</form>
+</div>
+<div id="loginform">
+<form>
+Username<input type="text"placeholder="enter your username"class="form-control border border-danger border-1">
+Password<input type="password"placeholder="enter your password"class="form-control border border-danger border-1">
+<input type="submit"class="btn btn-dark mt-2 border-danger border-1" value="LOGIN">
+<a href="#"onclick="demo3()">Forgot Password</a>
+</form>
+</div>
+<div id="fpform">
+<form>
+<input type="text"class="form-control"/>
+<input type="submit"class="btn btn-dark mt-2 border-danger border-1" value="Send OTP">
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+var rform=document.querySelector("#regform")
+var lform=document.querySelector("#loginform")
+var fform=document.querySelector("#fpform")
+lform.style.display="none"
+fform.style.display="none"
+function demo1(){
+lform.style.display="block"
+rform.style.display="none"
+fform.style.display="none"
+}
+function demo2(){
+rform.style.display="block"
+lform.style.display="none"
+fform.style.display="none"
+}
+function demo3(){
+fform.style.display="block"
+rform.style.display="none"
+lform.style.display="none"
+}
+</script>
+</body>
+</html> 

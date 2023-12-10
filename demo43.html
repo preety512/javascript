@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body onload="demo()">
+              <p></p>
+       <script>
+        function demo ()
+        {
+
+        var stuName=["RAM","AJAY","AYANSH","MOHAN"]    
+        var stuCity=["LUCKNOW","KANPUR","VARANSHI","SULTANPUR"]
+        var stuCollege=["HPL","GGPL","CPL","GPL"]
+        var res="<table border='1'<tr></tr>"
+        for(var i in stuName)
+        {
+         //res=res+"<tr><td>"+stuName[i]+"</td><td>"+stuCity[i]+"</td><td>"+stuCollege[i]+"</td></tr>"  
+         res+=`<tr><td>${stuName[i]}</td><td>${stuCity[i]}</td><td>${stuCollege[i]}</td></tr>`
+        document.querySelector("p").innerHTML=res
+        }
+        res+="</table>"
+        }
+       </script> 
+    </body>
+</html>
