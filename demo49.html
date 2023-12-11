@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.imgS{
+height:200px;
+width:320px;
+border:3px solid gray;
+padding:10px;
+border-radius:5px;
+margin:25px;
+}
+#modal{
+display:none;
+height:600px;
+width:100%;
+background:rgba(0,0,0,.6);
+position:fixed;
+top:0px;
+}
+#modalInner{
+height:400px;
+width:550px;
+background:white;
+border-radius:10px;
+padding:25px;
+margin:80px auto;
+}
+#modalInner img{
+height:80%;
+width:100%;
+
+}
+</style>
+</head>
+<body>
+<img src="images/img12.jpg"onclick="demo(this)"class="imgS"/>
+<img src="images/img21.jpg"onclick="demo(this)"class="imgS"/>
+<img src="images/img12.jpg"onclick="demo(this)"class="imgS"/>
+<img src="images/img21.jpg"onclick="demo(this)"class="imgS"/>
+<img src="images/img12.jpg"onclick="demo(this)"class="imgS"/>
+<img src="images/img21.jpg"onclick="demo(this)"class="imgS"/>
+<!--start modal -->
+<div id="modal">
+<div id="modalInner">
+<h3>IMAGE TITLE  <a href="demo53.html" style="color:red;float:right;">x</a></h3>
+<img src="images/img12.jpg" id="imgBig"/>
+</div>
+</div>
+<script>
+function demo(x)
+{
+document.querySelector("#modal").style.display="block";
+document.querySelector("#imgBig").src=x.src
+}
+/*window.setTimeout(function(){   
+document.querySelector("#modal").style.display="none";
+},5000)*/0
+</script>
+</body>
+</html>

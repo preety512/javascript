@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<p></p>
+<span></span>
+<script>
+var demo=(...x)=>
+{
+var p=document.querySelector("p")
+//x=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var r="<select onchange='demo1(this)'>"
+for(var i of x){
+//p.innerText=i
+//r=r+`<option>${i}</option>`//HTMLCSSJAVASCRIPTJQUERYBOOTSTRAP
+r=r+"<option>"+i+"</option>"
+//alert(r)
+}
+r+="</select>";
+p.innerHTML=r
+}
+demo("HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP")
+//x=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var demo1=(ddl)=>{
+//var ddl=document.querySelector("select")
+document.querySelector("span").innerHTML=`<b>selected value : ${ddl.value}</b>`
+//alert(ddl.value)
+}
+</script>
+</body>
+</html>
