@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+input{
+height:50px;
+width:50px;
+background:black;
+color:white;
+border:none;
+bolder-radius:50%;
+}
+</style>
+</head>
+<body>
+<center>
+<img src="images/off.png"height="200px"/><br><br>
+<input type="button"value="ON"/>
+<input type="button"onclick="start()"value="START"/>
+<input type="button"onclick="stop()"value="STOP"/>
+</center>
+<script>
+function demo()
+{
+var im=document.querySelector("img")
+var btn=document.querySelector("input")
+if(btn.value=="ON")
+{
+btn.value="OFF"
+btn.style.background="red"
+im.setAttribute("src","images/on.png")
+}
+else{
+btn.value="ON"
+btn.style.background="green"
+im.setAttribute("src","images/off.png")
+}
+}
+var i=0
+function start()
+{
+if(i==0){
+x=window.setInterval(demo,1000)
+}
+i++;
+}
+function stop()
+{
+window.clearInterval(x)
+}
+</script>
+</body>
+</html>

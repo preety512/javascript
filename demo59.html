@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+<input onclick="demo()" type="radio">DROPDOWNLIST
+<input onclick="demo1()" type="radio">UL
+<input onclick="demo2()" type="radio">OL
+<p></p>
+<script>
+function demo(){
+var p=document.querySelector("p")
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP","HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var r="<select>"
+for( var i=0;i<9;i++){
+r=r+"<option>"+arr[i]+"</option>"
+}
+r+="</select>";
+p.innerHTML=r;
+}
+function demo1(){
+var p=document.querySelector("p")
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP","HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var r="<ul>"
+for( var i=0;i<9;i++){
+r=r+"<li>"+arr[i]+"</li>"
+}
+r+="</ul>";
+p.innerHTML=r;
+}
+function demo2(){
+var p=document.querySelector("p")
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP","HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var r="<ol>"
+for( var i=0;i<9;i++){
+r=r+"<li>"+arr[i]+"</li>"
+}
+r+="</ol>";
+p.innerHTML=r;
+}
+</script>
+</body>
+</html>

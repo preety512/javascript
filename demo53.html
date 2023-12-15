@@ -1,0 +1,49 @@
+<html>
+<head>
+<link href="CSS/bootstrap.css"rel="stylesheet"/>
+<link href="CSS/all.css"rel="stylesheet"/>
+<script src="JS/bootstrap.bundle.js"></script>
+<style>
+body{
+background:rgba(128,0,255)
+}
+#top{
+background:white;
+min-height:300px;
+padding-top:30px;
+margin:100px auto;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4" id="top">
+<input type="password"placeholder="Create password"required class="form-control" id="txt1"><span id="msg1"></span><br/>
+<input type="password"placeholder="Confirm password"required class="form-control"id="txt2"/><span id="msg2"></span>
+<p>use at least 8 characters</p>
+<button onclick="demo()" class="form-control fs-3 bg-primary text-light"id="btn1">Check</button>
+</div>
+<div class="col-sm-4"></div>
+</div>
+</div>
+<script>
+function demo(){
+var t=document.querySelector("#txt1")
+var sp=document.querySelector("#msg1")
+var t1=document.querySelector("#txt2")
+var sp=document.querySelector("#msg2")
+var btn=document.querySelector("#btn1")
+var len=t.value.length
+if(len!=8){
+sp.innerText="invalid password"
+}
+else{
+sp.innerText="valid pasword"
+}
+}
+</script>
+</body>
+</html>

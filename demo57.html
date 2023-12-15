@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+Name:<br/><input type="text" id="name"><br/></br>
+Mobile:<br/><input type="tel"id="mobile"><br/></br>
+Email:<br/><input type="email"id="email"></br></br>
+Message:<br/><textarea id="message"></textarea></br></br>
+<button onclick="demo()">GET DATA</button>
+<p></p>
+<script>
+var demo=()=>
+{
+var name=document.querySelector("#name").value;
+var mobile=document.querySelector("#mobile").value;
+var email=document.querySelector("#email").value;
+var msg=document.querySelector("#message").value;
+document.querySelector("p").innerHTML=`
+<div>
+<b>Name:</b>${name} <br/>
+<b>Mobile:</b>${mobile} <br/>
+<b>Email:</b>${email} <br/>
+<b>Message:</b>${msg} <br/></div>
+<button onclick="demo1()">print</button>`
+}
+function demo1()
+{
+var b=document.body.innerHTML
+var x=document.querySelector("div").innerHTML
+document.body.innerHTML=x
+print()
+document.body.innerHTML=b;
+}
+</script>
+</body>
+</html>

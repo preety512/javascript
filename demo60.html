@@ -1,0 +1,39 @@
+<html>
+<head></head>
+<body>
+<input onchange="demo(this)" type="radio"value="ddl"name="a">DROPDOWNLIST
+<input onchange="demo(this)" type="radio"value="ul"name="a">UL
+<input onchange="demo(this)" type="radio" value="ol"name="a">OL
+<p id="p"></p>
+<script>
+function demo(x){
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY","BOOTSTRAP"]
+var color=["red","green","yellow","blue","aqua"]
+var color1=["aqua","blue","green","red","yellow"]
+var v=x.value//ddl
+if(v=="ddl"){
+var res="<select>";
+arr.forEach(function(data,i){
+res+="<option style='background:"+color[i]+";color:"+color1[i]+";'>"+data+"</option>";
+})
+res+="</select>"
+}
+if(v=="ul"){
+var res="<ul>";
+arr.forEach(function(data,i){
+res+="<li style='background:"+color[i]+";color:"+color1[i]+";'>"+data+"</li>";
+})
+res+="</ul>"
+}
+if(v=="ol"){
+var res="<ol>";
+arr.forEach(function(data,i){
+res+="<li style='background:"+color[i]+";color:"+color1[i]+";'>"+data+"</li>";
+})
+res+="</ol>"
+}
+p.innerHTML=res;
+}
+</script>
+</body>
+</html>
