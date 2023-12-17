@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body>
+    <p></p>
+	<table border="1px">
+	<tr onclick="demo(this)"id="t1">
+	<th>Name</th>
+	<th>Collage</th>
+	<th>City</th>
+	</tr>
+	<tr onclick="demo(this)"id="t2">
+	<td>Ram</td>
+	<td>IET LUCKNOW</td>
+	<td>LUCKNOW</td>
+	</tr>
+	<tr onclick="demo(this)"id="t3">
+	<td>Mohan</td>
+	<td>FGIET</td>
+	<td>RAEBARELI</td>
+	</tr>
+	<tr onclick="demo(this)"id="t4">
+	<td>Sohan</td>
+	<td>MMMUT</td>
+	<td>GORAKHPUR</td>
+	</tr>
+	</table>
+     <script>
+       function demo(x){
+	   var x=confirm("Are you sure want to hide this row ?")
+	   if(x==true){
+	   t2.style.display="none";
+	   t1.style.display="block";
+	   t3.style.display="block";
+	   t4.style.display="none";
+	   }
+	   }
+       </script> 
+    </body>
+</html>

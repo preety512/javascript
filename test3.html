@@ -1,0 +1,55 @@
+<html>
+<head>
+<link href="CSS/bootstrap.css"rel="stylesheet"/>
+<style>
+.btn{
+height:40px;
+width:70px;
+background:black;
+font-size:18px;
+color:gray;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6 mx-auto p-3 bg-info mt-5 border border-dark border-1">
+<h2 class="text-center">Simple Calculatator using Js</h2>
+<hr/>
+<center>
+Enter 1st value : &nbsp;<input type="number" id="t1"><br/><br/>
+Enter 2st value : &nbsp;<input type="number" id="t2"><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result: <input type="number"id="t3"class="ms-5">
+<br></br>
+<button class="btn ms-5 "value="plus" onclick="demo(this)">+</button>
+<button class="btn  "value="sub" onclick="demo(this)">-</button>
+<button class="btn  "value="multi" onclick="demo(this)">*</button>
+<button class="btn  "value="divide" onclick="demo(this)">/</button>
+<button class="btn  "value="mdivide" onclick="demo(this)">%</button>
+<hr/>
+</div>
+</div>
+</div>
+<script>
+function demo(x){
+var v=x.value
+if(v=="plus"){
+t3.value=parseInt(t1.value)+parseInt(t2.value);
+}
+else if(v=="sub"){
+t3.value=parseInt(t1.value)-parseInt(t2.value);
+}
+else if(v=="multi"){
+t3.value=parseInt(t1.value)*parseInt(t2.value);
+}
+if(v=="divide"){
+t3.value=parseInt(t1.value)/parseInt(t2.value);
+}
+if(v=="mdivide"){
+t3.value=parseInt(t1.value)%parseInt(t2.value);
+}
+}
+</script>
+</body>
+</html>
