@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+div{
+height:500px;
+width:1200px;
+margin:50px auto;
+border:20px groove aqua;
+text-align:center;
+line-height:500px;
+font-size:150px;
+}
+</style>
+</head>
+<body>
+<div>TCHPILE TECHNOLOGY</div>
+<script>
+var demo=()=>
+{
+var str="ABCDEF0123456789abcdef"
+var color1="#"
+var color2="#"
+var color3="#"
+for (var i=0;i<=5;i++)
+{
+var rindex1=Math.floor(Math.random()*str.length)
+var rindex2=Math.floor(Math.random()*str.length)
+var rindex3=Math.floor(Math.random()*str.length)
+var rchar1=str[rindex1]
+var rchar2=str[rindex2]
+var rchar3=str[rindex3]
+color1=color1+rchar1
+color2=color2+rchar2
+color3=color1+rchar3
+}
+var dv=document.querySelector(".a")
+dv.style.background=color1
+dv.style.color=color2;
+dv.style.border="20px groove"+color3;
+} 
+setInterval("demo()",1000)
+
+
+</script>
+</body>
+</html>

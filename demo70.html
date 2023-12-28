@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+#div1{
+height:400px;
+width:800px;
+margin:50px auto;
+border:5px solid maroon;
+text-align:center;
+line-height:500px;
+font-size:150px;
+}
+#div2{
+height:100px;
+width:600px;
+text-align:center;
+margin:50px auto;
+border:5px solid maroon;
+line-height:100px;
+font-size:50px;
+}
+.btn{
+border:2px solid maroon;
+font-size:25px;
+background:white;
+}
+</style>
+</head>
+<body>
+<div id="div1">
+<div id="div2">Preety</div>
+<input class="btn"onclick="demo1()" type="button"value="set color"/>
+</div>
+<script>
+var demo=()=>
+{
+var str="ABCDEF0123456789abcdef"
+var color="#"
+for (var i=0;i<=5;i++)
+{
+var rindex=Math.floor(Math.random()*str.length)
+var rchar=str[rindex]
+color=color+rchar
+}
+var dv=document.querySelector("#div2")
+dv.innerText=color
+dv.style.background=color
+} 
+setInterval("demo()",1000)
+
+var demo1=()=>
+{
+var dv =document.querySelector("#div2")
+var color=dv.innerText
+document.querySelector("#div1").style.background=color
+}
+</script>
+</body>
+</html>

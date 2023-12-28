@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<p>TECHPILE TECHNOLOGY</p>
+<script>
+var str="0123456789ABCDEF"
+	var color="#"
+	for (var i=0;i<=5;i++)
+	{
+	var rindex=Math.floor(Math.random()*str.length)//0
+	color=color+str.charAt(rindex)//#20
+	//alert("Random Index is :"+rindex);
+	//alert("Random ch:"+str.charAt(rindex));
+	//alert("Random color:"+color);
+	
+	}
+	var p=document.querySelector("p")
+	p.style.background=color;
+	p.innerHTML="<h1>"+color+"</h1>"
+</script>
+</body>
+</html>
