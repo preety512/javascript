@@ -1,0 +1,81 @@
+<html>
+<head>
+<link href="CSS/bootstrap.css"rel="stylesheet"/>
+<style>
+body{
+background:green;
+}
+#outer{
+min-height:400px;
+width:350px;
+margin:100px auto;
+border:2px solid white;
+padding:30px;
+color:white;
+}
+p{
+font-size:25px;
+}
+#m{
+background:white;
+height:60px;
+text-align:center;
+line-height:60px;
+color:gray;
+}
+.b{
+height:60px;
+width:60px;
+line-height:60px;
+text-align:center;
+background:white;
+color:black;
+font-size:28px;
+float:left;
+margin:10px;
+border-radius:5px;
+}
+.b:active{
+            background-color: green;
+            color: white;
+</style>
+</head>
+<body>
+<div id="outer">
+<p id="s">SCORE<p>
+<p id="m">MESSAGE</p>
+<P id="gn">Generated no:</P>
+<div class="b"onclick="demo(this)">1</div>
+<div class="b"onclick="demo(this)">2</div>
+<div class="b"onclick="demo(this)">3</div>
+<div class="b"onclick="demo(this)">4</div>
+<div class="b"onclick="demo(this)">5</div>
+<div class="b"onclick="demo(this)">6</div>
+</div>
+<script>
+var t=0;
+var w=0;
+function demo(obj)
+{
+t++;
+var msg=document.querySelector("#m")
+var s=document.querySelector("#s")
+var gn=Math.floor(Math.random()*6)+1
+var a=document.querySelector("#gn")
+a.innerText="Generated No is :"+gn
+if(obj.innerText==gn)
+{
+w++
+msg.innerText="you win..."
+msg.style.color="green"
+}
+else
+{
+msg.innerText="you loose.."
+msg.style.color="red"
+}
+s.innerText="Score"+w+"/"+t
+}
+</script>
+</body>
+</html>

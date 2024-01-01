@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.css"rel="stylesheet"/>
+    <script src="../boot/js/bootstrap.bundle.js"></script>
+    <style>
+         
+        .row{
+            min-height: 400px;
+            margin: 100px 0px;
+        }
+        .out{
+            border: 3px solid double black;
+            box-sizing: border-box;
+        }
+        i{
+            width: 18px;
+        }
+        .ch{
+            height: 18px;
+            width: 18px;
+        }
+        i:active{
+            color: black;
+        }
+        #c{
+            height: 45px;
+            width: 150px;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 45px;
+        }
+        input{
+            height: 45px;
+        }
+    </style>
+</head>
+<body onload="demo()">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 p-5 out border border-2 border-dark">
+            <form action=""> 
+            <input type="text" class="form-control border border-2 border-secondary" id="i" placeholder="Enter the Capture Code">
+            <div class="input-group mt-4">
+                <div class="border border-2 border-secondary" id="c"></div>
+                <span class="ms-3 mt-2"><i class="fa-solid fa-arrows-rotate" onclick="demo()"></i></span>
+            </div>
+            <span class=" text-primary"><input type="checkbox" class=" border border-5 border-secondary ch mt-4 p-4" id="che"> You are not robot!</span>
+            <p class="mt-3"></p>
+            <input type="button" class="btn btn-dark" onclick="demo1()" value="Submit Capture Code">
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+
+    <script>
+        var str ="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        var l = str.length;
+        var c =document.getElementById("c")
+        var cp = document.getElementById("i")
+        var che = document.getElementById("che")
+        var w = document.querySelector("p")
+        capture="";
+        function demo(){
+            for(i=1;i<=6;i++){
+                    var rindex = Math.floor(Math.random()*l); 
+                    capture=capture+str.charAt(rindex)
+            }
+            c.innerText = capture;  
+            cp.value = "";
+            che.checked=false;
+            w.innerText=""
+            cp.setAttribute('style','border:  !important')
+            capture=""
+        }
+        function demo1(){
+          
+            if(cp.value=="" && che.checked==false){
+                w.innerHTML="Please Enter The Capture Code And Check The Box!";
+                cp.setAttribute('style','border: 2px solid red !important')
+                che.setAttribute('style','border: 2px solid red !important')
+                w.style.color="red"
+            }
+            else if(cp.value==""){
+                w.innerHTML="Please Enter The Capture Code!";
+                w.style.color="red"
+                cp.setAttribute('style','border: 2px solid red !important')
+            }
+            else if(che.checked==false){
+                w.innerHTML="Please Check the Box!";
+                w.style.color="red"
+                che.setAttribute('style','border: 2px solid red !important')
+                cp.setAttribute('style','border: none')
+            }
+            else{
+                
+                if(c.innerText==cp.value ){
+                    w.innerHTML="Capture Code Match!";
+                    w.style.color="green"
+                }
+                else{
+                    w.innerHTML="Please Enter Right Capture Code!";
+                    w.style.color="red"
+                    cp.setAttribute('style','border: 2px solid red !important')
+                }
+            }
+        } 
+    </script>
+</body>
+</html>
