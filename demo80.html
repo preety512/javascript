@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+#outer{
+height:300px;
+width:300px;
+background:red;
+}
+#inner{
+height:250px;
+width:250px;
+background:green;
+}
+</style>
+</head>
+<body>
+<div id="outer">OUTER
+<div id="inner">INNER
+<button>CLICK ME</button>
+</div>
+</div>
+<script>
+document.querySelector("#outer").addEventListener("click",()=>{
+alert("you click on outer div")
+},true)
+document.querySelector("#inner").addEventListener("click",()=>{
+alert("you click on inner div")
+},true)
+document.querySelector("button").addEventListener("click",()=>{
+alert("you click on button ")
+},true)
+</script>
+</body>
+</html>
