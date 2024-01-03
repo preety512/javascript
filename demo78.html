@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+body{
+background:black;
+font-size:50px;
+color:red;
+font-weight:bold;
+text-align:center;
+padding-top:100px;
+}
+p{
+font-size:100px;
+font-family:Digital-7;
+background:white;
+border:10px groove red;
+border-radius:5px;
+width:600px;
+margin:0px auto;
+box-shadow:0px 0px 20px 10px black inset;
+}
+</style>
+</head>
+<body  onload="demo()">
+<h1>DIGITAL CLOCK</h1>
+<p>12:13</p>
+<script>
+function demo(){
+var obj=new Date()
+var p=document.querySelector("p")
+p.innerText=obj.toLocaleTimeString()
+setTimeout(demo,1000)
+}
+//setInterval(demo,1000)
+</script>
+</body>
+</html>

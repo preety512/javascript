@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+body{
+background:#6ab439;
+}
+div{
+min-height:300px;
+border:10px solid white;
+padding:20px;
+width:400px;
+margin:80px auto;
+}
+h1{
+height:60px;
+background:url('images/images11.jpg');
+background-size:cover;
+line-height:60px;
+text-align:center;
+letter-spacing:24px;
+}
+input{
+height:45px;
+width:98%;
+border:none;
+}
+</style>
+</head>
+<body>
+<div>
+<h1><del>asd231</del></h1>
+<img src="images/button.png"style="position:relative;left:350px;bottom:76px;"height="45px"onclick="demo()">
+<input type="text"placeholder="Enter Captcha code.."/><br/></br>
+<button>CHECK</button>
+</div>
+<script>
+function demo()
+{
+var str="123asdfhHGDRS@#%*&ZXCi";
+var captcha="";
+for(var i=0;i<6;i++)
+{
+var ri=Math.floor(Math.random()*str.length)//0-21
+var rchar=str[ri]
+captcha=captcha+rchar
+}
+document.querySelector("del").innerText=captcha
+}
+demo()
+</script>
+</body>
+</html>

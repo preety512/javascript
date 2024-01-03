@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+<button>CLICK ME</button>
+</div>
+<script>
+function demo1()
+{
+event.stopPropagation()
+alert("div")
+}
+function demo2()
+{
+event.stopPropagation()
+alert("button")
+}
+document.querySelector("button").addEventListener("click",demo2)
+document.querySelector("div").addEventListener("click",demo1)
+</script>
+</body>
+</html>
