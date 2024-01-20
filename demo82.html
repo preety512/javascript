@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<select>
+<option>--select--</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>JAVASCRIPT</option>
+<option>REACT JS</option>
+<option>VUE JS</option>
+<option>JAVA</option>
+</select>
+<p></p>
+<script>
+//function demo(x) onchange="demo(this)"
+//{
+//document.querySelector("p").innerHTML=x.value
+//}
+document.querySelector("select").addEventListener("change",function(){
+
+document.querySelector("p").innerHTML=this.value;
+})
+</script>
+</body>
+</html>

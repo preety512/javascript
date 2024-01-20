@@ -1,0 +1,32 @@
+<html>
+<head> 
+</head>
+<body>
+<input onchange="demo(this)" type="file"/>
+<span></span><br/><br/>
+<input id="btn" disabled type="submit"value="save"/>
+<script>
+function demo(x)
+{
+var fullpath=x.value;//abc.xyz.jpg
+var ext=fullpath.substring(fullpath.lastIndexOf('.')+1).toLoweCase()
+var btn=document.querySelector("#btn")
+var sp=document.querySelector("span")
+if(ext=="jpg" || ext=="png" || extr=="jpeg")
+{
+sp.innerText="valid Image file"
+sp.style.color="green"
+btn.removeAttribute("disabled")
+btn.style.background="green"
+}
+else
+{
+sp.innerText="Invalid Image\ file"
+sp.style.color="red"
+btn.setAttribute("disabled","disabled")
+btn.style.background="red"
+}
+}
+</script>
+</body>
+</html>

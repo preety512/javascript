@@ -1,0 +1,27 @@
+<html>
+<head> 
+</head>
+<body>
+<input id="txt1" type="text"/>
+<button>Click me</button>
+<p></p>
+<span></span>
+<script>
+document.querySelector("button").addEventListener("click",function(){
+var str=document.querySelector("input").value
+var arr=str.split(" ")
+var res="<select onchange='demo(this)'>"
+for(var a of arr)
+{
+res+="<option>"+a+"</option>"
+}
+res+="</select>"
+document.querySelector("p").innerHTML=res
+})
+function demo(x)
+{
+document.querySelector("span").innerHTML=x.value.fontcolor("red");
+}
+</script>
+</body>
+</html>
